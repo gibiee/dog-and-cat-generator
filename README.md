@@ -22,7 +22,10 @@ Stable Diffusion의 공개 이후, diffusion 모델이 굉장히 많이 발표�
 
 
 ## 개요
-단일 모델으로 개와 고양이를 conditional하게 생성할 수 있도록 학습을 진행할 예정입니다.
+- GAN / Diffusion 모두 단일 모델으로 개와 고양이를 conditional하게 생성할 수 있도록 구현.
+  - GAN 모델은 class 정보를 입력받을 수 있음.
+  - Diffusion 모델은 text prompt로 "dog" 또는 "cat"만 입력받을 수 있음.
+- pretrained weight를 최대한 활용하지 않는 방향으로 진행.
 
 
 ## 데이터셋 준비
